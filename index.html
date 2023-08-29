@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en-ca" id="index">
+
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+        <meta charset="utf-8" />
+
+        <title> Julia's Portfolio - JuliosoWorld </title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    </head>   
+
+
+    <body onload="magic()" >
+
+        <div id=loader> 
+            <img alt="JuliosoWorld page loader" id="jsworld" src="images/jsworld-loader.gif" >
+        </div>
+
+        <!--***************************Fixed Items******************************-->
+
+
+
+        <div class="graphics">
+            <img  alt="spinning circle" class="floating-graphics" id="special-circle" src="images/special_cirlce.svg">
+            <img  alt="glimmering sparkle" class="floating-graphics" id="glimmer-1" src="images/glimmer.svg">
+            <img  alt="glimmering sparkle" class="floating-graphics" id="glimmer-2" src="images/glimmer.svg">
+
+
+            <div id="circles-container">                 
+                <img  alt="spinning circle" class="floating-graphics" id="inner-circle" src="images/inner_circle.svg">
+                <img  alt="spinning circle" class="floating-graphics" id="outer-circle" src="images/outer_circle.svg">
+            </div>
+
+
+            <img  alt="a letter x" class="floating-graphics" id="x-1" src="images/letter_x.svg">
+            <img  alt="a letter x" class="floating-graphics" id="x-2" src="images/letter_x.svg">
+        </div>
+
+
+        <div class="vertical-options">      
+            <h2 class="about" id="open-about"> about me</h2>
+            <a href="mailto:juliosoworld@outlook.com"><h2 class="email"> juliosoworld@outlook.com </h2></a>
+        </div>
+
+
+        <!--***************************Modal******************************-->
+
+
+        <div id="about-modal">      
+            <div id="faded-background"> </div>
+
+
+            <h2 class="about" id="close-about"> close me</h2>
+
+            <div id="about-container">
+                <p id="about-text"> 
+                    Julia Shorindé is a multifaceted designer who combines various media–especially words and sound–to create distinct experiences. Having recently graduated from the University of Waterloo’s undergrad design program, she’s had comprehensive practice applying her various abilities with charming yet unconventional results.       <br><br>
+                    Her overarching style is moody and exploratory. Meanwhile, she finds her roots in experimental and alternative genres. At the end of the day, she is an imagination mover and she says anything goes.
+                    <br><br>
+                    <span id="note">   <img alt="JuliosoWorld logo" id="jsworld-smol" src="images/jsworld.png" > was created from scratch and inspired by Steve Mengins website.</span>
+                </p>
+            </div>
+
+
+            <a href="mailto:juliosoworld@outlook.com"><h2 class="email"> juliosoworld@outlook.com </h2></a>
+        </div>
+
+
+
+        <!--****************************Page Sections******************************-->
+
+
+        <div id="section-snap" > 
+
+            <!--****************************Intro Page******************************-->
+            <div class="section"  id="section-1">
+
+                <div class="introducing" > 
+
+                    <img  alt="Julia Shorinde"  id="my-name" src="images/my-name.png">
+                    <img  alt="Julia Shorinde's titles"  id="my-titles" src="images/my-titles.png"> 
+                    <img  alt="floating distorted colourful shapes"  id="floaters" src="images/floaters.gif">
+                    <a href="#section-2"> <img alt="scroll down arrow" id="arrow" src="images/arrow.svg"></a>
+                </div>
+
+            </div>
+
+
+            <!--****************************FLOATING NAME******************************-->
+
+            <img  alt="Julia Shorinde"  id="my-name-smol" src="images/my-name.png"> 
+            <a href="#section-1"> <div id="line-in"> </div></a>
+
+
+
+            <!--****************************Work One******************************-->
+
+            <div class="section" id="section-2">
+
+
+                <div class="slideshow" id="work-1">
+
+
+                    <div class="slide"> 
+                        <h1 class="content"> In <br> Ghostly <br> Sight</h1>
+                        <p  class="content description1"> 
+                            <span class="w1-st" > solo project </span>
+                            <br>p5.js game
+
+                            <br><br><br>
+
+                            <span class="w1-st" > roles </span>
+                            <br>designer,
+                            <br>programmer,
+                            <br>illustrator
+
+                        </p>
+
+                        <p  class="content description2"> 
+                            <span class="w1-st" > year </span>
+                            <br>2020
+
+                            <br><br><br>
+
+                            <span class="w1-st" > for </span>
+                            <br> intro to
+                            <br> computer 
+                            <br>programming 2
+                        </p>
+
+                        <img alt="In Ghostly Sight game title page" class="content" id="igs-1" src="images/work-1/igs-1.png" >
+                    </div>
+
+
+                    <div class="slide">
+
+                        <p class="content textual" >
+                            <br> <br>
+                            <b> <i> In Ghostly Sight</i></b> is a retro-styled JavaScript game created using the p5.js library. Centering on my enduring inclination to code a glowing effect into a program one day, a game about ghosts was born…
+                        </p>
+                        <img alt="In Ghostly Sight game title page" class="content" id="igs-2" src="images/work-1/igs-2.png" >
+                    </div> 
+
+
+                    <div class="slide">
+                        <img alt="In-game ghost player selection" class="content" id="igs-3" src="images/work-1/igs-3.png" >
+                    </div> 
+
+
+                    <div class="slide">
+
+                        <p class="content work-title"> In Ghostly Sight </p>
+                        <img alt="In-game collectible fruit sprites" class="content" id="igs-4" src="images/work-1/igs-4.png" >
+
+                        <p class="content textual" >
+
+                            The pixel-art style of the game’s visual items was created using the Adobe Illustrator live paint tool. The ghosts in this game were inherently inspired by those in Pacman–the goal of the game is to help them collect fruits. Whilst the game keeps the retro vibe in check, it maintains a different feel from Pacman in both gameplay and looks. 
+
+                        </p>
+                    </div> 
+
+
+                    <div class="slide">
+                        <img alt="The game's narrative introduction" class="content" id="igs-5" src="images/work-1/igs-5.png" >
+                    </div> 
+
+
+                    <div class="slide">
+                        <p class="content work-title"> In Ghostly Sight </p>
+                        <img alt="Basic web-style instructions for the game" class="content" id="igs-6" src="images/work-1/igs-6.png" >
+
+                        <p class="content textual" >
+
+                            <br>  <br> 
+                            The goal of this project was to showcase programming skills I’d gained throughout a CS course. The making of the game provided the opportunity to practice storytelling and create memorable characters.
+                        </p>
+                    </div> 
+
+
+                    <div class="slide">
+                        <iframe class="content video" width="100%" height="100%" src="https://www.youtube.com/embed/BOa9chocz34?rel=0&playsinline=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+                    </div> 
+                </div>
+
+
+                <p class="number">1 of 7</p> 
+
+
+            </div>
+
+
+
+
+            <!--****************************Work Two******************************-->
+            <div class="section" >
+
+
+
+                <div class="section" >
+
+
+                    <div class="slideshow" id="work-2">
+
+
+                        <div class="slide"> 
+                            <h1 class="content"> Bluetooth <br> Rules <br> My Day </h1>
+
+                            <p  class="content description1"> 
+                                <span class="w2-st" > solo project </span>
+                                <br>infographic <br> comic
+
+                                <br><br>
+
+                                <span class="w2-st" > roles </span>
+                                <br>researcher,
+                                <br>illustrator
+                                <br>
+
+                            </p>
+
+                            <p  class="content description2"> 
+                                <span class="w2-st" > year </span>
+                                <br>2020
+
+                                <br><br><br>
+
+                                <span class="w2-st" > for </span>
+                                <br>intro to 
+                                <br>digital culture
+
+                            </p>
+
+
+                            <img alt="Scene from Bluetooth Rules My Day strip" class="content" id="bd-1" src="images/work-2/bd-1.png" >
+                        </div>
+
+
+                        <div class="slide">
+                            <p class="content textual" > 
+                                <br>
+                                <i><b>Bluetooth Rules My Day</b></i> is a comic strip made in response to a concept termed <i>When Technology Stops Being Magic</i>. It highlights how technology that may appear as a magic wand may in fact serve as a limb. Made by visualising the results of a 24-hour auto-ethnographic study (taking notes) of my interactions with the digital medium Bluetooth.
+                            </p>
+
+
+
+                        </div> 
+
+
+
+                        <div class="slide">
+                            <img alt="Notes from my smartphone" class="content" id="bd-2" src="images/work-2/bd-2.png" >
+                            <img alt="Notes from my smartphone" class="content" id="bd-3" src="images/work-2/bd-3.png" >
+
+                        </div> 
+
+                        <div class="slide">
+                            <p class="content work-title"> Bluetooth Rules My Day </p>
+
+                            <p class="content textual" >
+                                Created using Adobe Photoshop, the comic strip utilises a grayscale palette with accents of colour to highlight upon the narrative elements regarding interactions with bluetooth. The character at the centre of the comic was designed in the likeness of myself to correspond with the nature of the project. The drawn comical style allows for an entertaining and didactic reading experience.
+                            </p>
+
+                            <img alt="autoethnography documentation" class="content" id="bd-4" src="images/work-2/bd-4.png" >
+                        </div> 
+
+
+                        <div class="slide" >
+                            <img alt="Bluetooth Rules My Day comic strip" class="content" id="bd-5" src="images/work-2/bd-5.png" >
+                        </div>
+                        <div class="slide" >                          
+                        </div>
+                        <div class="slide" >                          
+                        </div>
+                        <div class="slide" >                          
+                        </div>
+                        <div class="slide" >                          
+                        </div>
+
+                    </div>
+
+
+                    <p class="number">2 of 7</p> 
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <!--****************************Work Three******************************-->
+            <div class="section" >
+
+
+                <div class="slideshow" id="work-3">
+
+
+                    <div class="slide"> 
+                        <h1 class="content"> Pandemic <br> Panic <br> Film </h1>
+
+
+                        <p  class="content description1"> 
+                            <span class="w3-st" > team project </span>
+                            <br>short film
+                            <br> documentary
+
+                            <br><br>
+
+                            <span class="w3-st" > roles </span>
+                            <br>editor,
+                            <br>voice talent,
+                            <br>producer
+
+                        </p>
+
+                        <p  class="content description2"> 
+                            <span class="w3-st" > year </span>
+                            <br>2020
+
+                            <br><br><br>
+
+                            <span class="w3-st" > for </span>
+                            <br> intro to 
+                            <br>digital media
+                            <br> design
+                        </p>
+
+                        <img alt="Pandemic Panic intro motion graphic still" class="content" id="pp-1" src="images/work-3/pp-1.png" >
+                    </div>
+
+
+                    <div class="slide">
+
+                        <p class="content textual" id="ppt-1">
+                            <br>
+                            <i><b> Pandemic Panic</b></i> is a piece that demonstrates the life and worries of students during the COVID-19 pandemic lockdown, one of the most surreal periods in the past few years. We were predominantly stuck inside and spread across Ontario during the creation of this 5-minute documentary.
+                            <br>
+
+                        </p>
+
+                    </div> 
+
+                    <div class="slide">
+                        <p class="content work-title"> Pandemic Panic </p>
+
+                        <p class="content textual" >
+                            <br><br>
+                            With the pandemic lining people’s every thought, we were drawn to explore the pandemic itself. So we planned and produced a documentary about how students were faring at the time. 
+
+                        </p>
+
+                    </div> 
+
+
+                    <div class="slide">
+                        <p class="content work-title"> Pandemic Panic </p>
+
+                        <p class="content textual">
+                            <br>
+                            Our varying levels of access to people and tools meant we applied ourselves in ways we could. Constant video calls and a slow shared Adobe Premiere Pro file eventually let us produce a piece that resonated then and doesn't cease  to baffle us cease to now.                     
+                        </p>
+
+                    </div> 
+
+
+                    <div class="slide">
+                        <iframe class="content" id="pp-vid1"  width="100%" height="99%" src="https://www.youtube.com/embed/iVpl6Zp7-UM?rel=0&playsinline=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    </div> 
+
+                </div>
+
+
+                <p class="number">3 of 7</p> 
+
+
+
+
+            </div>
+
+
+
+
+            <!--****************************Work Four******************************-->
+            <div class="section" >
+
+
+
+                <div class="section" >
+
+
+                    <div class="slideshow" id="work-4">
+
+
+                        <div class="slide"> 
+                            <h1 class="content"> Talk <br> to Usie </h1>
+
+                            <p  class="content description1"> 
+                                <span class="w4-st" > solo project </span>
+                                <br>ux design
+
+                                <br><br><br>
+
+                                <span class="w4-st" > roles </span>
+                                <br>researcher,
+                                <br>designer,
+                                <br>illustrator
+
+                            </p>
+
+                            <p  class="content description2"> 
+                                <span class="w4-st" > year </span>
+                                <br>2022
+
+                                <br><br><br>
+
+                                <span class="w4-st" > for </span>
+                                <br>special topics
+                                <br>in interaction
+                                <br>design
+                            </p>
+
+
+                            <img alt="Grid of Usie the wizard pictures" class="content" id="usie-1" src="images/work-4/usie-1.png" >
+                        </div>
+
+
+                        <div class="slide">
+
+                            <p class="content textual" id="usie-t1"> 
+                                <br>
+                                <i><b> Talk to Usie </b></i>is an interactive experience created as a platform for a modernised terms of use script. People tend to disregard text-heavy terms and conditions interfaces because they are tedious and time-consuming. Talk to Usie was developed as part of an exploration of new ways for apps to communicate with users regarding terms of use at sign up. 
+                            </p>
+                        </div> 
+
+
+                        <div class="slide">
+
+                            <p class="content work-title"> Talk to Usie </p>
+                            <img alt="Wizard chibi sketch" class="content" id="usie-2" src="images/work-4/usie-2.png" >
+                            <p class="content textual" id="usie-t2"> 
+                                With the desire to build a narrative and promote a positive relationship between users and the application, the creation of a relatable personality was necessary. The initial character design was a chibi wizard which was childish.  
+                                <br>  
+                                <br>  
+                                Considering that the generalised target audience of most apps are adolescents who are able to sign up by themselves, someone youthful was better–someone like Usie…  
+                            </p>
+
+
+                        </div> 
+
+
+                        <div class="slide">
+
+                            <img alt="Usie in-app sketch" class="content" id="usie-3" src="images/work-4/usie-3.png" >
+
+
+                        </div> 
+
+
+                        <div class="slide">
+                            <p class="content work-title"> Talk to Usie </p>
+                            <p class="content textual"> 
+                                <br>
+                                Several facial expression and position cards were created whilst the bedroom background remained the same. These cards were then arranged using Figma along with speech elements and buttons, forming a moderately interactive and animated terms of use experience–the world of Usie.
+                            </p>
+                            <img alt="Usie in-app sketch" class="content" id="usie-4" src="images/work-4/usie-4.png" >
+
+                        </div> 
+
+
+                        <div class="slide"> 
+
+                            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="99.8%" height="100%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FGO0TAsZPT6VPvStgxjFxR1%2Fa1---gbda414%3Ftype%3Ddesign%26node-id%3D20-138%26t%3DFgKo99YUOUjTT3FP-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D20%253A138%26mode%3Ddesign" allowfullscreen></iframe>
+
+                        </div> 
+
+
+
+                    </div>
+
+
+                    <p class="number">4 of 7</p> 
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <!--****************************Work Five******************************-->
+            <div class="section" >
+
+
+
+                <div class="section" >
+
+
+                    <div class="slideshow" id="work-5">
+
+
+                        <div class="slide"> 
+                            <h1 class="content"> WYA <br> WYWG <br>  </h1>
+
+                            <p  class="content description1"> 
+                                <span class="w5-st" > solo project </span>
+                                <br>animation/
+                                reel
+
+                                <br><br><br>
+
+                                <span class="w5-st" > roles </span>
+                                <br>animator,
+                                <br>sound artist,
+                                <br>storyteller
+
+                            </p>
+
+                            <p  class="content description2"> 
+                                <span class="w5-st" > year </span>
+                                <br>2023
+
+                                <br><br><br>
+
+                                <span class="w5-st" > for </span>
+                                <br>design in
+                                <br>society
+
+                            </p>
+
+                            <img alt="Illustrated album cover for WYAWYWG soundtrack" class="content" id="wya-1" src="images/work-5/wya-1.png" >
+
+                        </div>
+
+
+                        <div class="slide">
+
+                            <p class="content textual"> 
+                                <i><b>WYAWYWG</b></i> stands for where you at, where you wanna go, which was a prompt for me, denoting that this is in fact a piece about me. It is both an animation and text adventure, which I used to act as a reel for some of my sound work. This combination allowed me to share my passion for all these forms of media at once; sound, illustration and storytelling take turns being centre stage!
+                            </p>
+
+
+                            <img alt="sketch of the desktop in WYAWYWG " class="content" id="wya-2" src="images/work-5/wya-2.png" >
+                        </div> 
+
+
+                        <div class="slide">
+                            <iframe class="content video" width="100%" height="100%" src="https://www.youtube.com/embed/WNuFuxFiL_k?rel=0&playsinline=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                        </div> 
+
+
+
+                    </div>
+
+
+                    <p class="number">5 of 7</p> 
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <!--****************************Work Six******************************-->
+            <div class="section" >
+
+
+
+                <div class="section" >
+
+
+                    <div class="slideshow" id="work-6">
+
+
+                        <div class="slide"> 
+                            <h1 class="content"> Wooded <br> Girl <br> Concepts </h1>
+
+                            <p  class="content description1"> 
+                                <span class="w6-st" > solo project </span>
+                                <br>character
+                                <br> design
+
+                                <br><br>
+
+                                <span class="w6-st" > roles </span>
+                                <br>designer
+                                <br>illustrator
+                                <br>
+
+                            </p>
+
+                            <p  class="content description2"> 
+                                <span class="w6-st" > year </span>
+                                <br>2023
+
+                                <br><br><br>
+
+                                <span class="w6-st" > for </span>
+                                <br>design in
+                                <br>society
+                                <br>
+                            </p>
+
+
+                            <img alt="The Wooded Girl inital sketch cropped" class="content" id="twg-1" src="images/work-6/twg-1.png" >
+                        </div>
+
+
+                        <div class="slide">
+
+                            <p class="content textual">
+                                <br>
+                                <i><b>The Wooded Girl </b></i> is a game character/ monster designed for the fictional horror of the <i>Wooded Girl Concepts</i>. It pays homage to the work of Boro Dantes, as it ventures into the realm of the uncanny and directly refers to own <i>Black Widow Concepts. </i>. Inspiration for this character came from my interest in true stories about forests. 
+                            </p>
+
+                        </div> 
+
+
+                        <div class="slide">
+
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JnNXpOZcqS4?rel=0&playsinline=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div> 
+
+
+
+                    </div>
+
+
+                    <p class="number">6 of 7</p> 
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <!--****************************Work Seven******************************-->
+            <div class="section" >
+
+
+
+                <div class="section" >
+
+
+                    <div class="slideshow" id="work-7">
+
+
+                        <div class="slide"> 
+                            <h1 class="content"> PSA: <br> The <br> Window  </h1>
+
+                            <p  class="content description1"> 
+                                <span class="w7-st" > solo/ team project </span>
+                                <br>psa 
+                                <br>instalment
+                                <br><br>
+
+                                <span class="w7-st" > roles </span>
+                                <br>designer,
+                                <br>illustrator
+                            </p>
+
+                            <p  class="content description2"> 
+                                <span class="w7-st" > year </span>
+                                <br>2023
+
+                                <br><br><br>
+
+                                <span class="w7-st" > for </span>
+                                <br>design in
+                                <br> society
+
+                            </p>
+
+                            <img alt="window psa in progress" class="content" id="psa-1" src="images/work-7/psa-1.jpg" >
+                        </div>
+
+
+                        <div class="slide">
+                            <p class="content work-title"> The Window</p>
+                            <p class="content textual" id="psa-t1"> 
+                                <br>
+                                The idea behind this project was to create a physicalised PSA that included text about our personal design philosophies, ultimately finding a way to extend them to others interactively. 
+                            </p>
+                            <img alt="window design mockup pre-fab" class="content" id="psa-2" src="images/work-7/psa-2.png" >
+                        </div> 
+
+
+                        <div class="slide">
+                            <p class="content work-title"> The Window</p>
+                            <p class="content textual" id="psa-t2"> 
+                                <br><br>
+                                Inspired by one friend’s spontaneous suggestion about creating a home, three of us decided to create a collective exhibit about openings of a house.
+                            </p>
+                            <img alt="in-situ mockup of window pre-fab" class="content" id="psa-3" src="images/work-7/psa-3.png" >
+                        </div> 
+
+                        <div class="slide">
+                            <p class="content work-title"> The Window</p>
+                            <img alt="psa paint job design mockup" class="content" id="psa-4" src="images/work-7/psa-4.png" >
+
+                        </div> 
+
+
+                        <div class="slide">
+                            <p class="content work-title"> The Window</p>
+                            <p class="content textual" id="psa-t3"> 
+                                <br><br>
+                                My piece was a 3D interactive sash window with a curtain installed in front. The window was created by hand from cardboard, glue, vinyl and paint. 
+                            </p>
+
+                            <img alt="fabricated cardboard window frame pieces" class="content" id="psa-5" src="images/work-7/psa-5.jpg" >
+                            <img alt="fabricated window" class="content" id="psa-6" src="images/work-7/psa-6.jpg" >
+                        </div> 
+
+
+                        <div class="slide">
+
+                            <p class="content textual"  id="psa-t4"> 
+                                The text was created through a combination of hand lettering, tracing and painting. The visuals were painted on Bristol board and glued behind the window frame.
+                            </p>
+
+                            <img alt="hand-lettering for window when opened" class="content" id="psa-7" src="images/work-7/psa-7.jpg" >
+                            <img alt="hand-lettering for window when closed" class="content" id="psa-8" src="images/work-7/psa-8.jpg" >
+
+                            <img alt="colour testing" class="content" id="psa-9" src="images/work-7/psa-9.jpg" >
+                            <img alt="paint test" class="content" id="psa-10" src="images/work-7/psa-10.jpg" >
+                            <img alt="final scenery paint job" class="content" id="psa-11" src="images/work-7/psa-11.jpg" >
+                        </div> 
+
+
+
+                        <div class="slide">
+                            <p class="content work-title"> The Window</p>
+                            <p class="content textual" id="psa-t5"> 
+                                The text on the PSA directly plays on the perspective of the window which is situated from inside looking out.
+                            </p>
+
+                            <video controls muted class="content" id="psa-vid" >  
+                                <source src="images/work-7/psa-vid.mp4" type="video/mp4"/>
+                            </video>
+                        </div> 
+
+
+                        <div class="slide">
+                            <img alt="fabricated window psa put in institution" class="content" id="psa-12" src="images/work-7/psa-12.jpg" >
+                            <img alt="Julia's window psa in progress" class="content" id="psa-13" src="images/work-7/psa-13.jpg" >
+                            <img alt="Julia's window psa in progress" class="content" id="psa-14" src="images/work-7/psa-14.jpg" >
+                        </div> 
+
+                    </div>
+
+
+                    <p class="number">7 of 7</p> 
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <script>
+
+            var modal = document.getElementById("about-modal");
+            var btn = document.getElementById("open-about");
+            var span = document.getElementById("close-about");
+            var arrw = document.getElementById("arrow");
+
+            var show = document.getElementsByClassName("slideshow");
+            var num = document.getElementsByClassName("number");
+
+            var loading;
+
+            //-----------------------for loader--------------------//
+
+
+            function magic() {
+                loading = setTimeout(world, 3000);
+            }
+
+            function world() {
+                document.getElementById("loader").style.display = "none";
+            }
+
+
+
+            //-----------------------for about page--------------------//
+
+
+
+            btn.onclick = function() {
+                modal.style.display = "block";
+
+                btn.style.display = "none";             
+                arrw.style.display = "none";
+
+
+                for (let i = 0; i < show.length; i++) {
+                    show[i].style.display = "none";
+                    num[i].style.display = "none";
+
+                }
+            }
+
+
+            span.onclick = function() {
+                modal.style.display = "none";
+
+                btn.style.display = "block";
+                arrw.style.display = "block";
+
+                for (let i = 0; i < show.length; i++) {
+                    show[i].style.display = "block";
+                    num[i].style.display = "block";
+
+                }
+            }
+
+
+
+        </script>
+
+
+
+
+    </body>
+
+</html>
+
+

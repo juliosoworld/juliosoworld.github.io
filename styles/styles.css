@@ -1,0 +1,1083 @@
+/*nothing to say yet*/
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+#index, #section-snap {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000c15;
+    padding:0;
+    margin:0;
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/*------------loader -----------*/
+
+
+#loader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background: black;
+    opacity: 90%;
+}
+
+
+#jsworld {
+    position: absolute;
+    width: 300px;
+    z-index: 100;  
+    left: calc(50% - 150px);
+    top:  calc(50% - 120px);
+}
+
+
+
+/*------------sections @ viewport dimensions -----------*/
+
+
+
+#section-snap {
+    padding:0;
+    margin:0;
+
+    height: 100vh;
+    width: 100vw;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+
+
+}
+
+
+.section {  
+    padding:0;
+    margin:0;
+
+    position: relative;
+
+    height: 100vh;
+    width: 100vw;
+
+    overflow-x: hidden;
+    scroll-snap-align: center;
+
+
+}
+
+
+
+
+/*------------scroll bar-----------*/
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    opacity: 1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #727ca0; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5d658e; 
+}
+
+
+
+
+/*------------floating graphics-----------*/
+
+
+
+.floating-graphics {
+    position: fixed;
+    z-index: -1;
+
+    fill: #3F4567;
+
+}
+
+
+#special-circle {
+    left: -90px;
+    bottom: 45%;
+    animation: rotation-1 5s linear infinite;
+}
+
+
+#circles-container {
+    position: absolute;
+    width: 0px;
+    height:0px;
+
+    right: 200px;
+    bottom: 425px;
+
+
+}
+
+#inner-circle{
+    position: absolute;
+    left:23px;
+    top:23px;
+
+    animation: rotation-1 8s linear infinite;
+
+
+}
+
+
+#outer-circle{
+    position: absolute;
+
+    width: 330px;
+    height:330px;
+
+
+    animation: rotation-2 5s linear infinite;
+
+}
+
+
+
+#glimmer-1 {
+    width: 4.75%;
+
+    position: absolute;
+
+    left:300px;
+    top:30px;
+
+    animation: translate-1 3s linear infinite;
+}
+
+
+#glimmer-2 {
+    width: 4.5%;
+
+    position: absolute;
+
+    right: 400px;
+    bottom: 40px;
+
+    animation: translate-2 3s linear infinite;
+}
+
+
+#x-1 {
+    position: absolute;
+
+    right:400px;
+    top:40px;
+
+    animation: rotation-2 5s linear infinite;
+
+}
+
+#x-2 {
+    position: absolute;
+
+    left:200px;
+    bottom:100px;
+
+    animation: rotation-2 5s linear infinite;
+
+}
+
+
+
+
+
+/* rotation patterns*/
+
+@-webkit-keyframes rotation-1 {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+@-webkit-keyframes rotation-2 {
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+/* floating patterns */
+
+@-webkit-keyframes translate-1 {
+    0% {
+        transform: translate(0, 10px);
+    }
+    50% {
+        transform:translate(0, -20px);
+    }
+    100% {
+        transform:translate(0, 10px);
+    }
+}
+
+@-webkit-keyframes translate-2 {
+    0% {
+        transform: translate(0, -6px);
+    }
+    50% {
+        transform:translate(0, 12px);
+    }
+    100% {
+        transform:translate(0, -6px);
+    }
+}
+
+
+
+
+
+
+/*------------vertical text options-----------*/
+
+
+
+.about, .email {
+
+    color: #b6bcd3;
+    font-family: 'League Spartan';
+    font-weight: 500;
+    font-size: 20px;
+
+    width: 250px;
+    position: fixed;
+    text-align: center;
+    bottom: 50%;
+    opacity: 0.5;
+
+    z-index: 19;
+}
+
+
+.about{
+    left: -50px;
+    transform: rotateZ(-90deg);
+}
+
+.about:hover, .about:active {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.email{
+    right: -50px;
+    transform: rotateZ(90deg);
+}
+
+
+.email:hover, .email:active {
+    opacity: 1;
+}
+
+
+
+
+/*------------about page-----------*/
+
+
+
+#about-modal {
+    display: none; 
+
+    position: fixed;
+    z-index: 35;
+}
+
+#faded-background{
+    position: absolute;
+    top: 0px;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: #000305;
+    opacity: 0.80;
+
+}
+
+#about-container {
+    position: absolute;
+
+    left:  calc(50vh - 250px);
+    top: calc(50vh - 350px);
+    
+    width: 1000px;
+    height: 700px;
+}
+
+
+#about-text {
+    position: relative;
+
+    font-size: 37px;
+    font-family: 'League Spartan';
+    font-weight: 100;
+    line-height: 155%;
+    text-align: justify;
+
+
+    margin:0px;
+    width: 1000px;
+    height: 700px;
+
+    color: white;
+
+    animation: fadein 2s;
+    -webkit-animation-name: fadein 2s;
+}
+
+
+#note {
+    font-size: 20px;
+    font-family: 'IBM Plex Mono';
+    font-weight: 500;
+    color: #b6bcd3;
+}
+
+#jsworld-smol {
+
+    display: inline-block;
+    width: 30px;
+
+    animation: fadein 2s;
+    -webkit-animation-name: fadein 2s;
+
+    margin: 0 0 -6px 0;
+}
+
+
+/*------------intro page-----------*/
+
+
+#floaters {
+    width: 1000px;
+    height: auto;
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -290px 0 0 -500px;
+    z-index: 7;
+}
+
+
+
+#my-name {
+    opacity: 0;
+
+    position: absolute;
+
+    width: 800px;
+
+    top: 50%;
+    left: 50%;
+    margin: -180px 0 0 -400px;
+
+    text-align: center;
+
+
+    z-index: 10;
+
+    animation: fadein 1s linear 5s forwards;
+    -webkit-animation-name: fadein 1s linear 5s forwards;
+
+}
+
+
+
+#my-titles {
+    opacity: 0;
+    position: absolute;
+
+    width: 401px;
+
+    top: 50%;
+    left: 50%;
+    margin: -30px 0 0 -200.5px;
+
+    text-align: center;
+
+    z-index: 10;
+
+    animation: fadein 1s linear 6s forwards;
+    -webkit-animation-name: fadein 1s linear 6s forwards; 
+
+
+}
+
+
+#arrow {
+    opacity: 0;
+    position: absolute;
+    width:30px;
+    left: 50%;
+    margin: 0px 0 0 -15px;
+
+    bottom: 70px;
+
+    animation: fadein 1s linear 7s forwards;
+    -webkit-animation-name: fadein 1s linear 7s forwards; 
+}
+
+
+
+@keyframes fadein {
+
+    from {
+        opacity: 0;
+        transform: translate(0, 5px);
+    }
+    to{
+        opacity: 1.0;
+        transform: translate(0, 0px);
+    }
+
+}
+
+@-webkit-keyframes fadein {
+
+    from {
+        opacity: 0;
+        transform: translate(0, 5px);
+    }
+    to{
+        opacity: 1.0;
+        transform: translate(0, 0px);
+    }
+
+}
+
+
+
+
+/*------------work sections-----------*/
+
+
+.slideshow {
+    position: absolute;
+
+    width: 1000px;
+    height: 580px;
+
+    top: 50%;
+    left: 50%;
+    margin: -290px 0 0 -500px;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+    scroll-snap-type: x mandatory;
+
+    background-color: #ffffff;
+
+    display: block;
+
+    animation: fadein 1s;
+    -webkit-animation-name: fadein 1s;
+
+}
+
+
+.slideshow::-webkit-scrollbar {
+    height: 7px;
+
+}
+
+
+.slide {
+    position: relative;
+    display: inline-block;
+
+    scroll-snap-align: center;
+
+    width: 1000px;
+    height: 580px;
+}
+
+
+#my-name-smol, #line-in{
+    position: sticky;
+    width: 200px;
+
+    left: calc(50% - 100px);
+    top: 50px;
+}
+
+#my-name-smol {
+    z-index: 20;
+    height: 65px;
+}
+
+
+#line-in {
+    z-index: 25;
+    height: 80px;
+
+}
+
+
+#line-in:hover, #line-in:active {
+    animation: extend 500ms linear forwards;
+    background-image: url("../images/line.png"); 
+    background-size: contain;
+}
+
+
+@keyframes extend {
+    0% { clip-path: inset(0 100% 0 0); }
+    100% { clip-path: inset(0); }
+}
+
+
+.number {
+    position: absolute;
+    left: 50%;
+    bottom: 120px;
+
+    width: 200px;
+    margin: 0 0 0 -100px;
+
+    text-align: center;
+    color: #484f75;
+
+    font-family: 'League Spartan';
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+
+/*------------Works-----------*/
+
+
+
+.content{
+    position: absolute;
+}
+
+h1 {
+    font-family: 'Spectral';
+    font-weight: 600;
+    line-height: 80px;
+    font-size: 80px;
+    left: 40px;
+    color: black;
+}
+
+
+p{
+    color: black;
+    font-family: 'Spectral';
+}
+
+
+
+.work-title{
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;  
+    bottom: 30px;
+    left: 40px;
+    text-align: left;
+    font-style: italic;
+}
+
+
+.work-descrip {
+    right: 27px;
+    text-align: right;
+}
+
+
+.w1-st, .w2-st,
+.w3-st, .w4-st,
+.w5-st, .w6-st,
+.w7-st {
+    font-size: 13px;
+    font-weight: 800;
+    color: #495189;
+}
+
+
+
+.textual {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 38px;
+    left: 60px;
+    top: 100px;
+    width: 550px;
+    white-space: wrap;
+
+    z-index: 10;
+
+}
+
+.description1, .description2 {
+    font-family: 'IBM Plex Mono';
+    font-size: 18px;
+    font-weight: 500;
+    top: 310px;
+}
+
+.description1 {
+
+    left: 40px;
+}
+
+.description2 {
+
+    left: 250px;
+}
+
+
+
+
+/*------------Work 1-----------*/
+#work-1::-webkit-scrollbar-thumb {
+    background: #495189; 
+}
+
+
+#igs-1 {
+    width: 500px;
+    right: 40px;
+    top: 60px;
+    filter: drop-shadow(5px 5px 2px rgb(107, 107, 107, 0.75));
+}
+
+
+#igs-2 {
+    width: 250px;
+    z-index: 0;
+    right: 80px;
+    top: 160px;
+
+}
+
+
+
+#igs-3, #igs-5 {
+    width: 600px;
+    top: 50px;
+    left: 190px;
+    filter: drop-shadow(5px 5px 2px rgb(107, 107, 107, 0.75));
+
+}
+
+
+#igs-4 {
+    width: 220px;
+    top: 146px;
+    right: 90px;
+
+}
+
+
+#igs-6 {
+    width: 300px;
+    right: 90px;
+    top: 145px;
+    filter: drop-shadow(-5px 5px 2px rgb(107, 107, 107, 0.75));
+}
+
+
+
+
+/*------------Work 2-----------*/
+
+
+#work-2::-webkit-scrollbar-thumb {
+    background: #495189; 
+}
+
+
+#bd-1 {
+    width: 500px;
+    right: 40px;
+    top: 60px;
+    filter: drop-shadow(5px 5px 2px rgb(107, 107, 107, 0.75));
+}
+
+#bd-2, #bd-3 {
+    top: 30px;
+    width: 300px;
+}
+
+
+#bd-2{
+    left: 180px;
+}
+
+
+#bd-3{
+    right: 180px;
+}
+
+#bd-4{
+    width: 370px;
+    right: 70px;
+    bottom: 30px;
+}
+
+#bd-5{
+    top:35px;
+    height: 510px;
+    width: auto;
+    left: 0px;
+}
+
+
+
+/*------------Work 3-----------*/
+
+
+#work-3::-webkit-scrollbar-thumb {
+    background: #495189; 
+}
+
+
+#pp-1 {
+    width: 500px;
+    right: 40px;
+    top: 60px;
+    filter: drop-shadow(5px 5px 2px rgb(107, 107, 107, 0.75));
+}
+
+
+
+/*------------Work 4-----------*/
+
+
+#work-4::-webkit-scrollbar-thumb {
+    background: #495189; 
+}
+
+
+#usie-1 {
+    width: 500px;
+    right: 40px;
+    top: 60px;
+    filter: drop-shadow(5px 5px 2px rgb(107, 107, 107, 0.75));
+
+}
+
+#usie-t1 {
+    top: 80px;  
+}
+
+#usie-t2 {
+    top: 64px;  
+}
+
+#usie-2 {
+    width: 300px;
+    right: 40px;
+    top: 130px;
+}
+
+
+#usie-3 {
+    width: 800px;
+    left: 100px;
+    top: 80px;
+
+}
+
+
+#usie-4 {
+    width: 1000px;
+    right: 0px;
+    top: 0px;
+
+}
+
+
+
+/*------------Work 5-----------*/
+
+
+#work-5::-webkit-scrollbar-thumb {
+    background: #495189; 
+}
+
+
+#wya-1 {
+    width: 500px;
+    right: 40px;
+    top: 60px;
+    filter: drop-shadow(5px 5px 2px rgb(107, 107, 107, 0.75));
+
+}
+
+#wya-2 {
+    width: 330px;
+    right: 60px;
+    bottom: 200px;
+
+}
+
+
+
+/*------------Work 6-----------*/
+
+
+
+#work-6::-webkit-scrollbar-thumb {
+    background: #495189; 
+}
+
+
+#twg-1 {
+    width: 500px;
+    right: 40px;
+    top: 60px;
+    filter: drop-shadow(5px 5px 2px rgb(107, 107, 107, 0.75));
+}
+
+
+/*------------Work 7-----------*/
+
+
+
+#work-7::-webkit-scrollbar-thumb {
+    background: #495189; 
+}
+
+
+#psa-t1, #psa-t2, 
+#psa-t3, #psa-t4 {
+    width: 435px;
+}
+
+
+#psa-1 {
+    width: 500px;
+    right: 40px;
+    top: 60px;
+    filter: drop-shadow(5px 5px 2px rgb(107, 107, 107, 0.75));
+}
+
+
+
+
+#psa-2 {
+    width: 450px;
+    right: 50px;
+    top: 100px;
+
+}
+
+
+
+
+#psa-3 {
+    width: 400px;
+    right: 50px;
+    top: 100px;
+
+
+}
+
+#psa-4 {
+    width: 500px;
+    left: 310px;
+    top: 10px;
+}
+
+#psa-5 {
+    width: 275px;
+    right: 160px;
+    top: 50px;
+}
+
+#psa-6 {
+    width: 220px;
+    right: 70px;
+    bottom: 50px;
+}
+
+
+
+#psa-t4 {
+    transform: translate(440px, -50px);
+}
+
+
+#psa-7 {
+    width: 220px;
+    left: 50px;
+    top: 80px;
+
+    z-index: 10;
+}
+
+#psa-8 {
+    width: 180px;
+    left: 150px;
+    top: 235px;
+    z-index: 9;
+}
+
+
+#psa-9 {
+    width: 130px;
+    right: 350px;
+    bottom: 120px;
+}
+
+
+#psa-10 {
+    width: 130px;
+    right: 240px;
+    bottom: 30px;
+
+}
+
+
+#psa-11 {
+    width: 185px;
+    right: 70px;
+    bottom: 70px;
+
+}
+
+
+#psa-t5 {
+    width: 350px;
+    transform: translate(60px, 50px);
+
+}
+
+
+#psa-vid {
+    width: 250px;
+    right: 140px;
+    bottom: 70px;
+
+}
+
+
+#psa-12 {
+    width: 200px;
+    left: 100px;
+    top: 160px;
+}
+
+
+#psa-13 {
+    width: 300px;
+    left: 326px;
+    top: 90px;
+
+
+}
+
+#psa-14 {
+    width: 250px;
+    right: 100px;
+    top: 190px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------other MEDIA SCREEN---------------------------------------
+repositioned and resized elements--*/
+
+
+/*---------------------------------------TABLET SCREEN----------------------------------*/
+
+
+@media only screen and (max-width : 1198px) {
+
+
+
+
+    .graphics, .introducing, .slideshow {
+
+        zoom: 60%;
+    }
+
+
+
+    #about-text {
+        width: 900px;
+    }
+
+
+    #my-name-smol, #line-in{
+        top:55px;
+    }
+
+
+
+}
+
+
+
+/*-------------------------------------HORIZONTAL PHONE SCREEN-----------------------------------*/
+
+@media only screen and (max-width : 767px) {
+
+    .graphics, .introducing, .slideshow, #about-text {
+        zoom: 40%;
+    }
+
+
+
+
+}
+
+
+/*-------------------------------------VERTICAL PHONE SCREEN-----------------------------------*/
+
+@media only screen and (max-width : 478px) {
+
+
+
+
+
+}
+
+
+
+
