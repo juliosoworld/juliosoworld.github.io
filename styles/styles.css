@@ -1075,11 +1075,6 @@ repositioned and resized elements--*/
         transform: scale(0.8);
     }
 
-    p {
-        
-        text-size-adjust: none;
-    }
-
 
     #about-text {
         top: 17vh;
@@ -1096,6 +1091,20 @@ repositioned and resized elements--*/
     .number { 
         font-size: 14px;
         bottom: 10px;
+    }
+
+
+
+
+    .textual  {
+        width: 550px;
+
+    }   
+
+
+    #psa-t1, #psa-t2, 
+    #psa-t3, #psa-t4 {
+        width: 435px;
     }
 
 }
@@ -1118,6 +1127,19 @@ repositioned and resized elements--*/
     #about-text {
         top: 17vh;
     }
+
+
+    .textual  {
+        width: 550px;
+
+    }   
+
+
+    #psa-t1, #psa-t2, 
+    #psa-t3, #psa-t4 {
+        width: 435px;
+    }
+
 
 }
 
@@ -1164,6 +1186,18 @@ repositioned and resized elements--*/
         right: 100px;
         bottom: 205px;
     }
+
+    .textual  {
+        width: 550px;
+
+    }   
+
+
+    #psa-t1, #psa-t2, 
+    #psa-t3, #psa-t4 {
+        width: 435px;
+    }
+
 
 
 }
