@@ -367,14 +367,13 @@ body{
 
 
 #note {
-    font-size: 20px;
+    font-size: 0.60em;
     font-family: 'IBM Plex Mono';
     font-weight: 500;
     color: #b6bcd3;
 }
 
 #jsworld-smol {
-
     display: inline-block;
     width: 30px;
 
@@ -382,6 +381,29 @@ body{
     -webkit-animation-name: fadein 2s;
 
     margin: 0 0 -6px 0;
+}
+
+
+#steve {
+
+    text-decoration: none;
+}
+
+steve:link {
+    color: #5463e4;
+
+}
+
+#steve:hover, #steve:active {
+
+    color:#8c2763;
+}
+
+
+#steve:visited {
+
+    color: #8b54e4;;
+
 }
 
 
@@ -420,8 +442,8 @@ body{
 
     z-index: 10;
 
-    animation: fadein 1s linear 5s forwards;
-    -webkit-animation-name: fadein 1s linear 5s forwards;
+    animation: fadein 1s linear forwards;
+    -webkit-animation-name: fadein 1s linear forwards;
 
 }
 
@@ -441,8 +463,8 @@ body{
 
     z-index: 10;
 
-    animation: fadein 1s linear 6s forwards;
-    -webkit-animation-name: fadein 1s linear 6s forwards; 
+    animation: fadein 1s linear forwards;
+    -webkit-animation-name: fadein 1s linear forwards; 
 
 
 }
@@ -458,7 +480,7 @@ body{
     bottom: 70px;
 
     animation: fadein 1s linear 7s forwards;
-    -webkit-animation-name: fadein 1s linear 7s forwards; 
+    -webkit-animation-name: fadein 1s linear 3s forwards; 
 }
 
 
@@ -1046,6 +1068,8 @@ p{
 
     display: none;
 
+    z-index: 10;
+
 }
 
 
@@ -1091,13 +1115,12 @@ repositioned and resized elements--*/
 
     .number { 
         font-size: 14px;
-        bottom: 20px;
+        bottom: 25px;
     }
 
 
     .textual, #psa-t1, #psa-t2, 
     #psa-t3, #psa-t4   {
-
         white-space: initial;
     }
 
@@ -1134,7 +1157,7 @@ repositioned and resized elements--*/
 
 @media only screen and (max-width : 900px) {
 
-    #jsworld, .introducing, #about-text, .floating-graphics{
+    #jsworld, .introducing, .floating-graphics{
         zoom: 40%;
     }
 
@@ -1143,10 +1166,9 @@ repositioned and resized elements--*/
         transform: scale(40%);
     }
 
-
-
     #about-text {
-        top: 200px;
+        zoom: 50%;
+        top: 80px;
     }
 
 
@@ -1172,16 +1194,6 @@ repositioned and resized elements--*/
     }
 
 
-    #psa-t1, #psa-t2, 
-    #psa-t3, #psa-t4 {
-        max-width: 435px;
-    }
-
-
-
-
-
-
 
 }
 
@@ -1191,10 +1203,16 @@ repositioned and resized elements--*/
 @media only screen and (max-width : 600px) {
 
 
-    .section, .about, .email, #my-name-smol {
+    .section, .vertical-options, #my-name-smol,
+    #line-in, #my-name-smol, #x-2, #glimmer-2 {
         display: none;
     }
 
+
+    #about-modal {
+        opacity: 0;
+        z-index: -100;
+    }    
 
     .no-display {
         display: inline-block;
@@ -1215,9 +1233,6 @@ repositioned and resized elements--*/
     }
 
 
-    #line-in, #my-name-smol, #x-2, #glimmer-2 {
-        display: none;
-    }
 
 
 

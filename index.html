@@ -17,7 +17,7 @@
         <p class="no-display"> Turn your phone horizontally or view on a larger screen</p>
 
         <div id="site-wrap">
-            
+
             <div id=loader> 
                 <img alt="JuliosoWorld page loader" id="jsworld" src="images/jsworld-loader.gif" >
             </div>
@@ -55,14 +55,13 @@
             <div id="about-modal">      
                 <div id="faded-background"> </div>
 
-
                 <h2 class="about" id="close-about"> close me</h2>
 
                 <p id="about-text"> 
                     Julia Shorindé is a multifaceted designer who combines various media–especially words and sound–to create distinct experiences. Having recently graduated from the University of Waterloo’s undergrad design program, she’s had comprehensive practice applying her various abilities with charming yet unconventional results.       <br><br>
                     Her overarching style is moody and exploratory. Meanwhile, she finds her roots in experimental and alternative genres. At the end of the day, she is an imagination mover and she says anything goes.
                     <br><br>
-                    <span id="note">   <img alt="JuliosoWorld logo" id="jsworld-smol" src="images/jsworld.png" > was created from scratch and inspired by Steve Mengins website.</span>
+                    <span id="note"><img alt="JuliosoWorld logo" id="jsworld-smol" src="images/jsworld.png" > was created from scratch and inspired by <a id="steve" href="https://www.stevenmengin.com/">Steve Mengin's website</a>.</span>
                 </p>
 
                 <a href="mailto:juliosoworld@outlook.com"><h2 class="email"> juliosoworld@outlook.com </h2></a>
@@ -783,6 +782,8 @@
                 var show = document.getElementsByClassName("slideshow");
                 var num = document.getElementsByClassName("number");
 
+                var wide = document.getElementById("loader")
+
                 var loading;
 
                 //-----------------------for loader--------------------//
@@ -800,7 +801,7 @@
 
                 //-----------------------for about page--------------------//
 
-
+                
 
                 btn.onclick = function() {
                     modal.style.display = "block";
@@ -812,7 +813,6 @@
                     for (let i = 0; i < show.length; i++) {
                         show[i].style.display = "none";
                         num[i].style.display = "none";
-
                     }
                 }
 
@@ -826,8 +826,9 @@
                     for (let i = 0; i < show.length; i++) {
                         show[i].style.display = "block";
                         num[i].style.display = "block";
-
                     }
+                                
+
                 }
 
 
