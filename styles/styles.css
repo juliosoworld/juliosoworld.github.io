@@ -643,7 +643,7 @@ p{
     line-height: 38px;
     left: 60px;
     top: 100px;
-    width: 550px;
+    max-width: 550px;
     white-space: wrap;
 
     z-index: 10;
@@ -884,7 +884,7 @@ p{
 
 #psa-t1, #psa-t2, 
 #psa-t3, #psa-t4 {
-    width: 435px;
+    max-width: 435px;
 }
 
 
@@ -1041,7 +1041,7 @@ p{
 
 
     left: calc(50% - 150px);
-    top: 50% ;
+    top: 50%;
 
     display: none;
 
@@ -1090,22 +1090,9 @@ repositioned and resized elements--*/
 
     .number { 
         font-size: 14px;
-        bottom: 13px;
+        bottom: 20px;
     }
 
-
-
-
-    .textual  {
-        width: 550px;
-
-    }   
-
-
-    #psa-t1, #psa-t2, 
-    #psa-t3, #psa-t4 {
-        width: 435px;
-    }
 
 }
 
@@ -1128,17 +1115,6 @@ repositioned and resized elements--*/
         top: 17vh;
     }
 
-
-    .textual  {
-        width: 550px;
-
-    }   
-
-
-    #psa-t1, #psa-t2, 
-    #psa-t3, #psa-t4 {
-        width: 435px;
-    }
 
 
 }
@@ -1186,18 +1162,6 @@ repositioned and resized elements--*/
         right: 100px;
         bottom: 205px;
     }
-
-    .textual  {
-        width: 550px;
-
-    }   
-
-
-    #psa-t1, #psa-t2, 
-    #psa-t3, #psa-t4 {
-        width: 435px;
-    }
-
 
 
 }
