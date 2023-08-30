@@ -12,6 +12,8 @@ body{
 
     padding:0;
     margin:0;
+
+
 }
 
 #site-wrap {
@@ -24,6 +26,7 @@ body{
     overflow: hidden;
 
     z-index: 0;
+
 }
 
 
@@ -138,8 +141,6 @@ body{
 
     right: 200px;
     bottom: 425px;
-
-
 }
 
 #inner-circle{
@@ -386,6 +387,8 @@ body{
 /*------------intro page-----------*/
 
 
+
+
 #floaters {
     width: 1000px;
     height: auto;
@@ -510,10 +513,6 @@ body{
     background-color: #ffffff;
 
     display: block;
-
-    animation: fadein 1s;
-    -webkit-animation-name: fadein 1s;
-
 }
 
 
@@ -554,7 +553,7 @@ body{
 }
 
 
-#line-in:hover, #line-in:active {
+#line-in:hover {
     animation: extend 500ms linear forwards;
     background-image: url("../images/line.png"); 
     background-size: contain;
@@ -1020,6 +1019,35 @@ p{
 }
 
 
+/*------------ View on Other Device Message-----------*/
+
+
+.no-display {
+
+    padding: 0;
+    margin: 0;
+
+    position: fixed;
+
+    text-align: center;
+
+
+    width: 300px;
+    height: 40px;
+    font-size: 14px;
+    font-family: 'IBM Plex Mono';
+    font-weight: 500;
+    color: #b6bcd3;
+
+
+    left: calc(50% - 150px);
+    top: calc(50% - 40px);
+
+    display: none;
+
+}
+
+
 
 
 
@@ -1039,28 +1067,29 @@ repositioned and resized elements--*/
 /*---------------------------------------Big Tablets--*/
 @media only screen and (max-width : 1200px) {
 
-    #jsworld, .floating-graphics, .introducing, .slideshow,  #about-text {
+    #jsworld, .introducing, #about-text, .floating-graphics {
         zoom: 80%;
     }
 
+    .slideshow {
+        transform: scale(0.8);
+    }
+
+
+
+
     #about-text {
         top: 17vh;
-
     }
 
     .about, .email {
         font-size: 18px;
     }
-    
-      #line-in, #my-name-smol {
+
+    #line-in, #my-name-smol {
 
         top: 6%;
     }
-
-
-
-
-
 
 }
 
@@ -1070,8 +1099,13 @@ repositioned and resized elements--*/
 /*---------------------------------------Big Tablets--*/
 @media only screen and (max-width : 1100px) {
 
-    #jsworld, .floating-graphics, .introducing, .slideshow,  #about-text {
+
+    #jsworld, .introducing, #about-text, .floating-graphics {
         zoom: 70%;
+    }
+
+    .slideshow {
+        transform: scale(70%);
     }
 
     #about-text {
@@ -1080,15 +1114,11 @@ repositioned and resized elements--*/
 
 
 
-    #line-in, #my-name-smol {
+    #line-in, #my-name-smol, .number {
 
-        top: 7%;
+        display: none;
     }
 
-    .number {
-        bottom: 10%;
-        font-size: 18px;
-    }
 
 
 }
@@ -1100,27 +1130,20 @@ repositioned and resized elements--*/
 
 @media only screen and (max-width : 900px) {
 
-    #jsworld, .floating-graphics, .introducing, .slideshow,  #about-text {
+    #jsworld, .introducing, #about-text, .floating-graphics{
         zoom: 40%;
     }
+
+
+    .slideshow {
+        transform: scale(40%);
+    }
+
+
 
     #about-text {
         top: 200px;
     }
-
-
-
-    #line-in, #my-name-smol {
-        zoom: 70%;
-
-        top: 4%;
-    }
-
-    .number {
-        bottom: 7%;
-        font-size: 15px;
-    }
-
 
 
     .about, .email {
@@ -1145,6 +1168,10 @@ repositioned and resized elements--*/
     }
 
 
+    #line-in, #my-name-smol, .number {
+
+        display: inline-block;
+    }
 
 
 }
@@ -1152,7 +1179,32 @@ repositioned and resized elements--*/
 
 /*-------------------------------------VERTICAL PHONE SCREEN-----------------------------------*/
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 600px) {
+
+
+    .section, .about, .email, #my-name-smol {
+        display: none;
+    }
+
+
+    .no-display {
+        display: inline-block;
+
+    }
+
+
+    #circles-container {
+        right: 90px;
+        bottom: 400px;
+    }
+    
+    
+    
+    #x-1 {
+        left:800px;
+        top:200px;
+    }
+
 
 
 
