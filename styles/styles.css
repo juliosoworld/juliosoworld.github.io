@@ -1041,7 +1041,7 @@ p{
 
 
     left: calc(50% - 150px);
-    top: calc(50% - 40px);
+    top: 50% ;
 
     display: none;
 
