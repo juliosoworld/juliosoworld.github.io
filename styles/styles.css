@@ -1075,7 +1075,10 @@ repositioned and resized elements--*/
         transform: scale(0.8);
     }
 
-
+    p {
+        
+        text-size-adjust: none;
+    }
 
 
     #about-text {
@@ -1087,8 +1090,12 @@ repositioned and resized elements--*/
     }
 
     #line-in, #my-name-smol {
+        display: none;
+    }
 
-        top: 6%;
+    .number { 
+        font-size: 14px;
+        bottom: 10px;
     }
 
 }
@@ -1111,15 +1118,6 @@ repositioned and resized elements--*/
     #about-text {
         top: 17vh;
     }
-
-
-
-    #line-in, #my-name-smol, .number {
-
-        display: none;
-    }
-
-
 
 }
 
@@ -1168,12 +1166,6 @@ repositioned and resized elements--*/
     }
 
 
-    #line-in, #my-name-smol, .number {
-
-        display: inline-block;
-    }
-
-
 }
 
 
@@ -1197,16 +1189,19 @@ repositioned and resized elements--*/
         right: 90px;
         bottom: 400px;
     }
-    
-    
-    
+
+
+
     #x-1 {
         left:800px;
         top:200px;
     }
 
 
+    #line-in, #my-name-smol {
 
+        display: none;
+    }
 
 
 
