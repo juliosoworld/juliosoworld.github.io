@@ -1208,8 +1208,7 @@ repositioned and resized elements--*/
     }
 
 
-    #line-in, #my-name-smol {
-
+    #line-in, #my-name-smol, #x-2, #glimmer-2 {
         display: none;
     }
 
