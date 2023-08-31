@@ -12,9 +12,6 @@ body{
 
     padding:0;
     margin:0;
-
-    -webkit-text-size-adjust: 100%;
-
 }
 
 #site-wrap {
@@ -385,18 +382,17 @@ body{
 
 
 #steve {
-
     text-decoration: none;
 }
 
-steve:link {
-    color: #5463e4;
 
+steve:link {
+    color: #7b85e1;
 }
 
 #steve:hover, #steve:active {
 
-    color:#8c2763;
+    color:#9b557f;
 }
 
 
@@ -1068,8 +1064,6 @@ p{
 
     display: none;
 
-    z-index: 10;
-
 }
 
 
@@ -1103,6 +1097,11 @@ repositioned and resized elements--*/
 
     #about-text {
         top: 17vh;
+    }
+    
+    
+     #note {
+        font-size: 20px;
     }
 
     .about, .email {
@@ -1169,6 +1168,11 @@ repositioned and resized elements--*/
     #about-text {
         zoom: 50%;
         top: 80px;
+    }
+    
+    
+    #note {
+        font-size: 17px;
     }
 
 
