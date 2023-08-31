@@ -459,8 +459,8 @@ steve:link {
 
     z-index: 10;
 
-    animation: fadein 1s linear forwards;
-    -webkit-animation-name: fadein 1s linear forwards; 
+    animation: fadein 1s linear 1s forwards;
+    -webkit-animation-name: fadein 1s linear 1s forwards; 
 
 
 }
@@ -475,8 +475,8 @@ steve:link {
 
     bottom: 70px;
 
-    animation: fadein 1s linear 7s forwards;
-    -webkit-animation-name: fadein 1s linear 3s forwards; 
+    animation: fadein 1s linear 2s forwards;
+    -webkit-animation-name: fadein 1s linear 2s forwards; 
 }
 
 
@@ -1084,7 +1084,7 @@ repositioned and resized elements--*/
 
 
 /*---------------------------------------Big Tablets--*/
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width : 1201px) {
 
     #jsworld, .introducing, #about-text, .floating-graphics {
         zoom: 80%;
@@ -1130,7 +1130,7 @@ repositioned and resized elements--*/
 
 
 /*---------------------------------------Big Tablets--*/
-@media only screen and (max-width : 1100px) {
+@media only screen and (max-width : 1101px) {
 
 
     #jsworld, .introducing, #about-text, .floating-graphics {
@@ -1145,8 +1145,6 @@ repositioned and resized elements--*/
         top: 17vh;
     }
 
-
-
 }
 
 
@@ -1154,7 +1152,10 @@ repositioned and resized elements--*/
 
 /*-------------------------------------HORIZONTAL PHONE SCREEN-----------------------------------*/
 
-@media only screen and (max-width : 900px) {
+
+
+
+@media only screen and (max-width : 916px) {
 
     #jsworld, .introducing, .floating-graphics{
         zoom: 40%;
@@ -1166,13 +1167,14 @@ repositioned and resized elements--*/
     }
 
     #about-text {
-        zoom: 50%;
+        font-size: 32px;
+        zoom: 52%;
         top: 80px;
     }
     
     
     #note {
-        font-size: 17px;
+        font-size: 18px;
     }
 
 
@@ -1197,14 +1199,12 @@ repositioned and resized elements--*/
         bottom: 205px;
     }
 
-
-
 }
 
 
 /*-------------------------------------VERTICAL PHONE SCREEN-----------------------------------*/
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 655px) {
 
 
     .section, .vertical-options, #my-name-smol,
