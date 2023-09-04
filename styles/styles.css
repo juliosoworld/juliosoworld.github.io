@@ -1138,7 +1138,7 @@ repositioned and resized elements--*/
     }
 
     .number { 
-        font-weight: 500;
+        font-weight: 300;
         font-size: 14px;
         bottom: 25px;
     }
