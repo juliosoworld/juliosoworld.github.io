@@ -513,6 +513,15 @@ steve:link {
 /*------------work sections-----------*/
 
 
+.slideshow::-webkit-scrollbar-thumb {
+    background: #495189; 
+}
+
+.slideshow::-webkit-scrollbar-thumb:hover {
+    background: #383f73; 
+}
+
+
 .slideshow {
     position: absolute;
 
@@ -541,7 +550,10 @@ steve:link {
 }
 
 
-.slide {
+.w1-slide, .w2-slide,
+.w3-slide, .w4-slide,
+.w5-slide, .w6-slide,
+.w7-slide {
     position: relative;
     display: inline-block;
 
@@ -600,6 +612,44 @@ steve:link {
     font-size: 20px;
     font-weight: 300;
 }
+
+
+
+.counter {
+    position: absolute;
+    left: 50%;
+    bottom: 130px;
+
+    width: 200px;
+    margin: 0 0 0 -100px;
+
+    text-align: center;
+    opacity: 0.8;
+}
+
+
+.w1-counter, .w2-counter,
+.w3-counter, .w4-counter,
+.w5-counter, .w6-counter,
+.w7-counter {
+    position: relative;
+    display: inline-block;
+
+    height: 7px;
+    width: 7px;
+    background-color: #495189;
+    border-radius: 50%;
+    margin: 0 7px 0 7px;
+}
+
+
+
+.first-counter {
+    background-color: white;
+}
+
+
+
 
 
 
@@ -690,10 +740,6 @@ p{
 
 
 /*------------Work 1-----------*/
-#work-1::-webkit-scrollbar-thumb {
-    background: #495189; 
-}
-
 
 #igs-1 {
     width: 500px;
@@ -740,13 +786,8 @@ p{
 
 
 
+
 /*------------Work 2-----------*/
-
-
-#work-2::-webkit-scrollbar-thumb {
-    background: #495189; 
-}
-
 
 #bd-1 {
     width: 500px;
@@ -785,13 +826,10 @@ p{
 
 
 
+
+
+
 /*------------Work 3-----------*/
-
-
-#work-3::-webkit-scrollbar-thumb {
-    background: #495189; 
-}
-
 
 #pp-1 {
     width: 500px;
@@ -802,13 +840,11 @@ p{
 
 
 
+
+
+
+
 /*------------Work 4-----------*/
-
-
-#work-4::-webkit-scrollbar-thumb {
-    background: #495189; 
-}
-
 
 #usie-1 {
     width: 500px;
@@ -850,13 +886,10 @@ p{
 
 
 
+
+
+
 /*------------Work 5-----------*/
-
-
-#work-5::-webkit-scrollbar-thumb {
-    background: #495189; 
-}
-
 
 #wya-1 {
     width: 500px;
@@ -875,14 +908,12 @@ p{
 
 
 
+
+
+
+
+
 /*------------Work 6-----------*/
-
-
-
-#work-6::-webkit-scrollbar-thumb {
-    background: #495189; 
-}
-
 
 #twg-1 {
     width: 500px;
@@ -892,14 +923,11 @@ p{
 }
 
 
+
+
+
+
 /*------------Work 7-----------*/
-
-
-
-#work-7::-webkit-scrollbar-thumb {
-    background: #495189; 
-}
-
 
 #psa-t1, #psa-t2, 
 #psa-t3, #psa-t4 {
@@ -1072,9 +1100,6 @@ p{
 
 
 
-
-
-
 /*--------------------------------------------other MEDIA SCREEN---------------------------------------
 repositioned and resized elements--*/
 
@@ -1098,9 +1123,9 @@ repositioned and resized elements--*/
     #about-text {
         top: 17vh;
     }
-    
-    
-     #note {
+
+
+    #note {
         font-size: 20px;
     }
 
@@ -1117,6 +1142,11 @@ repositioned and resized elements--*/
         bottom: 25px;
     }
 
+    .counter {
+        bottom: 100px;
+
+    }
+
 
     .textual, #psa-t1, #psa-t2, 
     #psa-t3, #psa-t4   {
@@ -1129,7 +1159,7 @@ repositioned and resized elements--*/
 
 
 
-/*---------------------------------------Big Tablets--*/
+/*---------------------------------------Small Tablets--*/
 @media only screen and (max-width : 1101px) {
 
 
@@ -1145,15 +1175,18 @@ repositioned and resized elements--*/
         top: 17vh;
     }
 
+
+    .counter {
+        bottom: 90px;
+
+    }
+
 }
 
 
 
 
 /*-------------------------------------HORIZONTAL PHONE SCREEN-----------------------------------*/
-
-
-
 
 @media only screen and (max-width : 916px) {
 
@@ -1171,8 +1204,8 @@ repositioned and resized elements--*/
         zoom: 52%;
         top: 80px;
     }
-    
-    
+
+
     #note {
         font-size: 18px;
     }
@@ -1199,6 +1232,41 @@ repositioned and resized elements--*/
         bottom: 205px;
     }
 
+
+    .counter {
+        zoom: 80%;
+        bottom: 73px;
+
+    }
+
+
+}
+
+
+
+@media only screen and (max-width : 852px) {
+
+
+    .counter {
+        zoom: 70%;
+        bottom: 73px;
+
+    }
+
+
+}
+
+
+@media only screen and (max-width : 742px) {
+
+    .counter {
+        zoom: 70%;
+        bottom:56px;
+    }
+
+    .number {       
+     bottom: 15px;
+    }
 }
 
 
