@@ -1138,12 +1138,13 @@ repositioned and resized elements--*/
     }
 
     .number { 
+        font-weight: 500;
         font-size: 14px;
         bottom: 25px;
     }
 
     .counter {
-        bottom: 100px;
+        bottom: 65px;
 
     }
 
@@ -1175,11 +1176,6 @@ repositioned and resized elements--*/
         top: 17vh;
     }
 
-
-    .counter {
-        bottom: 90px;
-
-    }
 
 }
 
@@ -1249,7 +1245,7 @@ repositioned and resized elements--*/
 
     .counter {
         zoom: 70%;
-        bottom: 73px;
+        bottom: 70px;
 
     }
 
@@ -1261,11 +1257,11 @@ repositioned and resized elements--*/
 
     .counter {
         zoom: 70%;
-        bottom:56px;
+        bottom:60px;
     }
 
     .number {       
-     bottom: 15px;
+        bottom: 15px;
     }
 }
 
