@@ -617,13 +617,11 @@ steve:link {
 
 .counter {
     position: absolute;
-    left: 50%;
     bottom: 130px;
 
     width: 200px;
-    margin: 0 0 0 -100px;
 
-    text-align: center;
+    text-align: left;
     opacity: 0.8;
 }
 
@@ -639,7 +637,7 @@ steve:link {
     width: 7px;
     background-color: #495189;
     border-radius: 50%;
-    margin: 0 7px 0 7px;
+    margin: 0 7px 0 0;
 }
 
 
@@ -1154,6 +1152,11 @@ repositioned and resized elements--*/
         white-space: initial;
     }
 
+    #x-2 {
+        bottom:140px;
+        left: 100px;
+    }
+
 
 }
 
@@ -1230,9 +1233,23 @@ repositioned and resized elements--*/
 
 
     .counter {
-        zoom: 80%;
-        bottom: 73px;
+        bottom: 65px;
+    }
 
+
+    .w1-counter, .w2-counter,
+    .w3-counter, .w4-counter,
+    .w5-counter, .w6-counter,
+    .w7-counter {
+
+        height: 4px;
+        width: 4px;
+
+    }
+
+    #x-2 {
+        bottom:100px;
+        left: 300px;
     }
 
 
@@ -1244,9 +1261,7 @@ repositioned and resized elements--*/
 
 
     .counter {
-        zoom: 70%;
-        bottom: 70px;
-
+        bottom: 50px;
     }
 
 
@@ -1256,8 +1271,7 @@ repositioned and resized elements--*/
 @media only screen and (max-width : 742px) {
 
     .counter {
-        zoom: 70%;
-        bottom:60px;
+        bottom: 40px;
     }
 
     .number {       

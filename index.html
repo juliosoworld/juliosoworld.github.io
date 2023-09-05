@@ -12,7 +12,7 @@
     </head>   
 
 
-    <body onload="magic()" >
+    <body onload="magic(); changeThese();" onresize="changeThese()">
 
         <p class="no-display"> Turn your phone horizontally or view on a larger screen</p>
 
@@ -877,6 +877,24 @@
 
         <script>
 
+            function changeThese() {
+
+                const container = document.getElementsByClassName("slideshow");
+                const containerPos = container[0].getBoundingClientRect();
+
+                const counters = document.getElementsByClassName("counter");
+
+                let check = containerPos.left.toFixed();
+
+                for (let i = 0; i < counters.length; i++) {
+                    counters[i].style.left = check.toString()+"px";
+                }
+
+            }
+
+
+            
+
             let slidesIndex = [0, 0, 0, 0, 0, 0, 0];
             let speedUp = 200;
 
@@ -889,6 +907,7 @@
                 const containerPos = container[0].getBoundingClientRect();
 
                 const counter = document.getElementsByClassName("w1-counter");
+
 
                 if(slidePos.right < containerPos.left+speedUp) {
 
@@ -905,6 +924,7 @@
                     counter[i].style.backgroundColor = "#495189";
                 }
                 counter[slidesIndex[0]].style.backgroundColor = "white";
+
             }            
 
 
@@ -960,7 +980,7 @@
                 }
                 counter[slidesIndex[2]].style.backgroundColor = "white";
             } 
-            
+
 
             function counterFour() {
                 const slideNum = document.getElementsByClassName("w4-slide");
