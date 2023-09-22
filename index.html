@@ -61,7 +61,7 @@
                     Julia Shorindé is a multifaceted designer who combines various media–especially words and sound–to create distinct experiences. Having recently graduated from the University of Waterloo’s undergrad design program, she’s had comprehensive practice applying her various abilities with charming yet unconventional results.       <br><br>
                     Her overarching style is moody and exploratory. Meanwhile, she finds her roots in experimental and alternative genres. At the end of the day, she is an imagination mover and she says anything goes.
                     <br><br>
-                    <span id="note"><img alt="JuliosoWorld logo" id="jsworld-smol" src="images/jsworld.png" > was created from scratch and inspired by <a id="steve" href="https://www.stevenmengin.com/">Steve Mengin's website</a>.</span>
+                    <span id="note"> © 2023 by Julia Shorinde. <img alt="JuliosoWorld logo" id="jsworld-smol" src="images/jsworld.png" > was created from scratch and inspired by <a id="steve" href="https://www.stevenmengin.com/">Steve Mengin's website.</a></span> 
                 </p>
 
                 <a href="mailto:juliosoworld@outlook.com"><h2 class="email"> juliosoworld@outlook.com </h2></a>
@@ -90,8 +90,7 @@
 
                 <!--****************************FLOATING NAME******************************-->
 
-                <img  alt="Julia Shorinde"  id="my-name-smol" src="images/my-name.png"> 
-                <a href="#section-1"> <div id="line-in"> </div></a>
+                <a href="#section-1"><img  alt="Julia Shorinde"  id="my-name-smol" src="images/my-name.png"></a>
 
 
 
@@ -820,6 +819,8 @@
 
             let show = document.getElementsByClassName("slideshow");
             let num = document.getElementsByClassName("number");
+            let count = document.getElementsByClassName("counter");
+
 
             let wide = document.getElementById("loader")
 
@@ -852,6 +853,7 @@
                 for (let i = 0; i < show.length; i++) {
                     show[i].style.display = "none";
                     num[i].style.display = "none";
+                    count[i].style.display = "none";
                 }
             }
 
@@ -865,6 +867,8 @@
                 for (let i = 0; i < show.length; i++) {
                     show[i].style.display = "block";
                     num[i].style.display = "block";
+                    count[i].style.display = "block";
+
                 }
 
 
@@ -893,7 +897,7 @@
             }
 
 
-            
+
 
             let slidesIndex = [0, 0, 0, 0, 0, 0, 0];
             let speedUp = 200;

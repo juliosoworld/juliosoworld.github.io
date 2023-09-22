@@ -364,7 +364,7 @@ body{
 
 
 #note {
-    font-size: 0.60em;
+    font-size: 0.40em;
     font-family: 'IBM Plex Mono';
     font-weight: 500;
     color: #b6bcd3;
@@ -372,7 +372,7 @@ body{
 
 #jsworld-smol {
     display: inline-block;
-    width: 30px;
+    width: 20px;
 
     animation: fadein 2s;
     -webkit-animation-name: fadein 2s;
@@ -564,31 +564,19 @@ steve:link {
 }
 
 
-#my-name-smol, #line-in{
+#my-name-smol {
     position: sticky;
     width: 200px;
 
     left: calc(50% - 100px);
     top: 50px;
-}
-
-#my-name-smol {
     z-index: 20;
 }
 
-
-#line-in {
-    z-index: 25;
-    height: 80px;
-
+#my-name-smol:hover {
+    opacity: 0.5;   
 }
 
-
-#line-in:hover {
-    animation: extend 500ms linear forwards;
-    background-image: url("../images/line.png"); 
-    background-size: contain;
-}
 
 
 @keyframes extend {
@@ -711,7 +699,7 @@ p{
     left: 60px;
     top: 100px;
     max-width: 550px;
-    white-space: wrap;
+    white-space: normal;
 
     z-index: 10;
 
@@ -1102,6 +1090,56 @@ p{
 repositioned and resized elements--*/
 
 
+
+
+
+/*---------------------------------------SHORTER COMPUTER SCREEN----------------------------------*/
+
+
+@media only screen and (max-height : 861px) {
+
+    #my-name-smol {
+
+        top: 25px;
+    }
+
+
+    .counter {
+        bottom: 45px;
+    }
+
+
+    .number { 
+        bottom: 45px;
+    }
+
+}
+
+
+@media only screen and (max-height : 761px) {
+
+    #my-name-smol {
+        top: 9px;
+        zoom: 90%;
+
+
+    }
+
+
+    .counter {
+        bottom: 20px;
+    }
+
+
+    .number { 
+        bottom: 20px;
+    }
+
+}
+
+
+
+
 /*---------------------------------------TABLET SCREEN----------------------------------*/
 
 
@@ -1131,7 +1169,7 @@ repositioned and resized elements--*/
         font-size: 18px;
     }
 
-    #line-in, #my-name-smol {
+    #my-name-smol {
         display: none;
     }
 
@@ -1286,7 +1324,7 @@ repositioned and resized elements--*/
 
 
     .section, .vertical-options, #my-name-smol,
-    #line-in, #my-name-smol, #x-2, #glimmer-2 {
+    #my-name-smol, #x-2, #glimmer-2 {
         display: none;
     }
 
